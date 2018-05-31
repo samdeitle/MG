@@ -28,4 +28,5 @@ html {
 	position: relative;
 	padding: 5px;
 	width: 443px;
+	justify-content: center;
 }

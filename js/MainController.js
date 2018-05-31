@@ -12,7 +12,7 @@ app.controller('MainController',
                       link: 'img/anime/3.png',
                     },
                     {
-                      link: 'img/anime/4.png',
+                      link: 'img/anime/4.jpg',
                     },
                     {
                       link: 'img/anime/5.jpg',
@@ -66,13 +66,7 @@ app.controller('MainController',
                       link: 'img/anime/21.png',
                     },
                     {
-                      link: 'img/anime/22.jpg',
+                      link: 'img/anime/22.png',
                     },
   								];
-  $scope.plusOne = function(index) {
-    $scope.products[index].likes += 1;
-  };
-  $scope.minusOne = function(index) {
-    $scope.products[index].dislikes += 1;
-  };
 }]);
