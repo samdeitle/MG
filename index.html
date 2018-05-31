@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+	<title>MGPRODUCTIONS</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src = "https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body ng-app="app">
+	
+	<div class="header">
+		<h1>M>G> PRODUCTIONS</h1>
+	</div>
+	<div class="main" ng-controller="MainController">
+		<div ng-repeat="picture in pictures" class="col-md-6 pics">
+			<img ng-src="{{ picture.link }}">
+		</div>
+	</div>
+
+	<!-- Modules -->
+	<script src="js/app.js"></script>		
+    <!-- Controllers -->
+    <script src="js/MainController.js"></script>
+</body>
+</html>
