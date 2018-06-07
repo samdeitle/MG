@@ -1,4 +1,4 @@
-app.controller('MainController',
+app.controller('AnimeController',
 ['$scope',function($scope) {
   $scope.title	 = 'Dirty! Old! Balls!';
   $scope.pictures= [

@@ -1,31 +1,52 @@
 @import url("fonts.css");
 
-html {
+/*html {
 	background: url('../img/banner.png') no-repeat center center fixed;
 	background-size: cover;
 	text-shadow: 2px 2px #222222;
 }
-
+*/
+body {
+	margin: 0px;
+	background: url('../img/banner.png') no-repeat center center fixed;
+	background-size: cover;
+	text-shadow: 2px 2px #222222;
+}
 .header {
 	font-family: "QGRegular";
-	font-size: 32px;
-	color: white;
+	font-size: 52px;
+	color: #22fe22;
 	text-align: center;
 	background-image: url('../img/MGwinglogopixel.png');
 	background-size: contain;
-	margin-top: 50px;
 	padding: 50px;
 
 }
 
+.main {
 
-.pics {
-	display: inline-grid;
+	justify-content: center;
+	align-content: center;
+	background: url('../img/banner.png') no-repeat center center fixed;
+	background-size: cover;
+	text-shadow: 2px 2px #222222;
+	padding: 0px;
+}
+
+.main-view {
+	display: flex;
+}
+/*.pics {
+	display: flex;
+	vertical-align: center;
 	align-content: center;
 	justify-content: center;
+}*/
+.col-container {
+	display: block;
 }
-.pics img{
-	position: relative;
+.pic{
+	display: flex;
 	padding: 5px;
 	width: 443px;
 	justify-content: center;

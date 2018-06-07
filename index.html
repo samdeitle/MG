@@ -5,22 +5,51 @@
 	<title>MGPRODUCTIONS</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script src = "https://code.jquery.com/jquery-latest.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
-<body ng-app="app">
+<body ng-app="app" class="ng-scope">
 	
 	<div class="header">
-		<h1>M>G> PRODUCTIONS</h1>
+		<p>M>G> PRODUCTIONS</h1>
+		<!-- <div class="nav-bar">
+			<button>Anime</button>
+			<button>Posters</button>
+		</div> -->
 	</div>
-	<div class="main" ng-controller="MainController">
-		<div ng-repeat="picture in pictures" class="col-md-6 pics">
-			<img ng-src="{{ picture.link }}">
+	
+	<div class="main" ng-controller="AnimeController">
+		<div class="container">
+			<div class="row main-view">
+				
+				<div class="col-container">
+				<div ng-repeat="picture in pictures" class="col-4">
+					<img ng-if="$index % 3 === 0" ng-src="{{ picture.link }}" class="pic">
+					<!-- <p>{{$index}}</p> -->
+				</div>
+				</div>
+				
+				<div class="col-container">
+				<div ng-repeat="picture in pictures" class="col-4">
+					<img ng-if="$index % 3 === 1" ng-src="{{ picture.link }}" class="pic">
+					<!-- <p>{{$index}}</p> -->
+				</div>
+				</div>
+				
+				<div class="col-container">
+				<div ng-repeat="picture in pictures" class="col-4">
+					<img ng-if="$index % 3 === 2" ng-src="{{ picture.link }}" class="pic">
+					<!-- <p>{{$index}}</p> -->
+				</div>
+				</div>
+			
+			</div>
 		</div>
 	</div>
 
 	<!-- Modules -->
 	<script src="js/app.js"></script>		
     <!-- Controllers -->
-    <script src="js/MainController.js"></script>
+    <script src="js/AnimeController.js"></script>
 </body>
 </html>
