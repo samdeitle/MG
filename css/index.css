@@ -45,10 +45,25 @@ body {
 }*/
 .col-container {
 	display: block;
+	padding-right: 5px;
 }
-.pic{
+.pic-container {
+	padding-top: 2px;
+}
+
+.pic {
 	display: flex;
-	padding: 5px;
+	/*padding: 5px;*/
 	width: 443px;
 	justify-content: center;
+	transition-property: box-shadow, padding;
 }
+
+.pic:hover {
+	box-shadow: 0px 0px 30px #222;
+}
+/*.pic * {
+	border: none;
+	margin: none;
+	padding: none;
+}*/

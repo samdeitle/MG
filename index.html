@@ -23,21 +23,21 @@
 			<div class="row main-view">
 				
 				<div class="col-container">
-				<div ng-repeat="picture in pictures" class="col-4">
+				<div ng-repeat="picture in pictures" class="pic-container">
 					<img ng-if="$index % 3 === 0" ng-src="{{ picture.link }}" class="pic">
 					<!-- <p>{{$index}}</p> -->
 				</div>
 				</div>
 				
 				<div class="col-container">
-				<div ng-repeat="picture in pictures" class="col-4">
+				<div ng-repeat="picture in pictures" class="pic-container">
 					<img ng-if="$index % 3 === 1" ng-src="{{ picture.link }}" class="pic">
 					<!-- <p>{{$index}}</p> -->
 				</div>
 				</div>
 				
 				<div class="col-container">
-				<div ng-repeat="picture in pictures" class="col-4">
+				<div ng-repeat="picture in pictures" class="pic-container">
 					<img ng-if="$index % 3 === 2" ng-src="{{ picture.link }}" class="pic">
 					<!-- <p>{{$index}}</p> -->
 				</div>
