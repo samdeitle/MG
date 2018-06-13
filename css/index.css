@@ -54,6 +54,7 @@ body {
 .pic {
 	display: flex;
 	/*padding: 5px;*/
+	border-radius: 5px;
 	width: 443px;
 	justify-content: center;
 	transition-property: box-shadow, padding;
