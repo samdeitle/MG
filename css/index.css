@@ -17,7 +17,7 @@ body {
 	font-size: 72px;
 	color: #22fe22;
 	text-align: center;
-	background-image: url('../img/MGwinglogopixel.png');
+	background: url('../img/MGwinglogopixel.png')/* no-repeat*/;
 	background-size: contain;
 	padding: 50px;
 
@@ -35,7 +35,7 @@ body {
 
 .main-view {
 	display: flex;
-	flex-wrap: wrap;
+	/*flex-wrap: wrap;*/
 }
 /*.pics {
 	display: flex;
